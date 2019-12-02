@@ -5,14 +5,13 @@ Debemos pensar en qué medida un superhéroe es igual a un villano, y en qué se
 
 Una vez que tengamos la/s clase/s debemos mostrarlas en la página en las listas correspondientes.
 
-## Hacer un fork al repositorio.
+### Proceso: 
 
-Los alumnos divididos en grupos pequeños deberían crear por lo menos un superheroe con su villano, crear la instancia, y subirla a github, haciendo un pull request al repo original.
+ 1. Hacer un fork del repositorio actual
+ 2. Clonarlo a su local
+ 3. Trabajar en la creación de la Clase Superheroe junto con toda la clase
+ 4. Trabajar individualmente en la creación de un superhéroe, junto con su grupo. Deben crear por lo menos un superhéroe y un villano. Ver las imágenes que están en la carpeta img/.
+ 5. Una vez finalizado, crear una branch, el nombre debe seguir el siguiente criterio: <<nombreDelSuperheroe>>
+ 6. Hacer los commits y subirlos al repositorio propio
+ 7. Solicitar un pull request al repo original.
 
-Se podría mejorar la función de renderizar, y los estilos, que no son para nada lindos.
-
-He dejado imágenes con las que trabajar, tengo que recortar una de Ares, que está muy alta respecto de las demás.
-
-Al finalizar tenemos que corregir este readme.
-
-Agregar si hace falta un .gitignore
