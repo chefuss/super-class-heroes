@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: helvetica, sans-serif;
+  color: #333;
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 600;
+}
+.section {
+  padding: 1rem 0;
+}
+#heroes {
+  background: #f7f7f7;
+}
+#villains {
+  background: #14131b;
+  color: white;
+}
+.container {
+  max-width: 92vw;
+  width: 100%;
+  margin: 0 auto;
+}
+.lists {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lists > li {
+  box-shadow: 1px 1px 10px 0px #c5c4c4;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  max-width: calc(33% - 1.6rem);
+  flex: 1 1 auto;
+  margin: 0.8rem;
+}
+#villains .lists > li {
+  box-shadow: 1px 1px 10px 0px #2b2b2b;
+}
+.lists img {
+  border-radius: 0.6rem;
+}
+.superlist {
+  list-style: bengali;
+}
