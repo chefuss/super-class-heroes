@@ -4,7 +4,7 @@ var villainsList = document.getElementById("list-villains");
 function render(person, list) {
   var li = document.createElement("li");
   li.classList.add("super");
-  li.id = person.identity.toLowerCase();
+  li.id = person.identidad.toLowerCase();
 
   var image = document.createElement("img");
   image.src = person.image;
@@ -13,18 +13,14 @@ function render(person, list) {
   heading.textContent = person.name;
 
   //check if is a superhero or supervillain.
-  var goodness = person.good ? "Superhero" : "Villian";
+  var goodness = person.bando ? "Superhero" : "Villian";
 
   var description = document.createElement("p");
   description.textContent =
-    person.name +
+    person.nombre +
     ", better known as " +
-    person.identity +
+    person.identidad +
     ", is " +
-    person.age +
-    " years old and " +
-    person.height +
-    " mts. of height " +
     goodness +
     ".";
 
@@ -34,7 +30,7 @@ function render(person, list) {
   var superPowerList = document.createElement("ul");
   superPowerList.classList.add("superlist");
 
-  person.superPower.forEach(function(superpower) {
+  person.poderes.forEach(function(superpower) {
     var item = document.createElement("li");
     item.textContent = superpower;
     superPowerList.append(item);
@@ -42,8 +38,8 @@ function render(person, list) {
 
   var enemy = document.createElement("p");
   var enemyLink = document.createElement("a");
-  enemyLink.href = "#" + person.enemy.toLowerCase();
-  enemyLink.textContent = person.enemy;
+  enemyLink.href = "#" + person.enemigos.toLowerCase();
+  enemyLink.textContent = person.enemigos;
 
   enemy.textContent = "The worst enemy is: ";
   enemy.append(enemyLink);
